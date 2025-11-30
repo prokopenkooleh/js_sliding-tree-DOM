@@ -13,7 +13,7 @@ allLi.forEach((li) => {
     }
   });
 
-  li.addEventListener('click', (ev) => {
+  li.firstChild.addEventListener('click', (ev) => {
     const targetLi = ev.target.closest('li');
 
     ev.stopPropagation();
